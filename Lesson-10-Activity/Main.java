@@ -42,7 +42,26 @@ class Main {
 		else if( weight <= 15 && weight > 10){
 			return 5.00;
 		}
+		else if( weight >15 && weight <=25){
+			return 10.00;
+		}
+		else{
+			double x = weight - 25;
+			return weight *(0.02 * x) + 10.00;
+		}
 		
+	}
+
+	boolean blueOrViolet( double frequency){
+		if(frequency >= 600 && frequency <=670){
+			return true;
+		}
+		else if(frequency >=700 && frequency <= 750){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 	public static void main(String[] args) {
@@ -59,6 +78,7 @@ class Main {
 		}else{
 			System.out.println("Student is NOT Graduating");
 		}
+
 
   }
 
