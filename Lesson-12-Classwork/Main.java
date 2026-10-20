@@ -52,7 +52,7 @@ class Main {
   }
 
   String imageType(String fileName){
-    
+    int 
   }
 
 
