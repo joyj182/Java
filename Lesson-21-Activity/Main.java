@@ -10,6 +10,24 @@ class Main {
     System.out.println("Day:" + day);
   }
 
+  void addTwoNumbers(){
+    int num1 = randInt(0 , 10);
+    int num2 = randInt(0,10);
+    int sum = num1 + num2;
+    print("Find the sum of these two numbers: " + num1 +" and " + num2);
+    int ans = Input.readInt();
+    while(!(sum == ans) ){
+      print("Wrong");
+      int guess = Input.readInt();
+    }
+   }
+
+  int gcf(int num1 , int num2){
+    int 
+  }
+
+
+
   public static void main(String[] args) {
     (new Main()).init();
   }
