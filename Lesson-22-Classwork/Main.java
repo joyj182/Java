@@ -1,11 +1,11 @@
 class Main {
 
 
-  int[] convert(int[] celsius){
-    int[] farhen = new int[celsius.length];
-    for(x=0; x<=celsius.length-1; x++){
+  double[] convert(double[] celsius){
+    double[] farhen = new double[celsius.length];
+    for(int x=0; x<=celsius.length-1; x++){
       farhen[x]= celsiusToFarhenheit(celsius[x]);
-    
+      print(farhen[x]);
     }
     return farhen;
   }
@@ -18,13 +18,14 @@ class Main {
 
   void init(){
   String[] friends = {}; 
-  int[] celsius = {26, 14, 26};
+  double[] celsius = {26.3, 14.1, 26.6};
+  double[] result = convert(celsius);
     
   }
 
   
 
   double celsiusToFarhenheit(double c){
-        return (int)(c*9/5+32);
+        return (c*9/5.0+32);
   }
 }
